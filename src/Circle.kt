@@ -1,8 +1,9 @@
-class Circle(_name: String) : Shape(_name) {
+class Circle : Shape("Circle") {
 
-    var radius = 5.00
-    fun setDimensions(_radius : Double) {
-        radius = _radius
+    var radius = 0
+
+    fun setDimensions(_radius : Int) {
+        this.radius = _radius
     }
 
     override fun printDimensions() {

@@ -1,8 +1,9 @@
-class Square(_name: String) : Shape(_name) {
+class Square : Shape("Square") {
 
-    var length = 5.00
-    fun setDimensions(_length : Double) {
-        length = _length
+    var length = 0
+
+    fun setDimensions(_length : Int) {
+        this.length = _length
     }
 
     override fun printDimensions() {
@@ -10,6 +11,6 @@ class Square(_name: String) : Shape(_name) {
     }
 
     override fun getArea(): Double {
-        return length*length
+        return (length*length.toDouble())
     }
 }
